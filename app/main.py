@@ -1,4 +1,2 @@
 def hello():
-    return "Hello Natalia"
-
-
+    return "Hello Sylwester"
