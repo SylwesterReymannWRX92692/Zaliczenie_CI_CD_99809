@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Run tests
           command: |
-            pytest
+            PYTHONPATH=. pytest
 
   docker-build-and-push:
     docker:
@@ -49,5 +49,4 @@ workflows:
       - docker-build-and-push:
           requires:
             - build-and-test
-
 
